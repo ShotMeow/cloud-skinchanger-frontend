@@ -1,12 +1,12 @@
 import React, { FC } from "react";
 
-import styles from "./Picture.module.scss";
+import styles from "./LandingPicture.module.scss";
 import Image from "next/image";
 
 import legionCommanderSrc from "@/shared/assets/legion-commander.png";
 import dotsSrc from "@/shared/assets/dots.png";
 
-const Picture: FC = () => {
+const LandingPicture: FC = () => {
   return (
     <div className={styles.picture}>
       <Image
@@ -19,4 +19,4 @@ const Picture: FC = () => {
   );
 };
 
-export default Picture;
+export default LandingPicture;

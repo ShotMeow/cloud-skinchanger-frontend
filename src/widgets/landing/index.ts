@@ -1,1 +1,1 @@
-export { Landing } from "./ui/Landing/Landing";
+export { LandingSection } from "@/widgets/landing/ui/LandingSection/LandingSection";

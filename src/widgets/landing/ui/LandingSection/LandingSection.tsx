@@ -1,16 +1,16 @@
 import React, { FC } from "react";
 
-import styles from "./Landing.module.scss";
-import Picture from "@/widgets/landing/ui/Picture/Picture";
+import styles from "./LandingSection.module.scss";
+import LandingPicture from "@/widgets/landing/ui/LandingPicture/LandingPicture";
 import { Button } from "@/shared/ui";
 import Image from "next/image";
 
 import applicationSrc from "@/shared/assets/application.webp";
 
-export const Landing: FC = () => {
+export const LandingSection: FC = () => {
   return (
     <section className={styles.landing}>
-      <Picture />
+      <LandingPicture />
       <div className={styles.text}>
         <h2>
           Cloud <span>Skinchanger</span> - инновационный <br /> инструмент по

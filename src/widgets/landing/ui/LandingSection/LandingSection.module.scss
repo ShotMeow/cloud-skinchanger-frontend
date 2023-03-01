@@ -1,5 +1,5 @@
 .landing {
-  @apply grid lg:grid-cols-2 items-center my-10 gap-10;
+  @apply grid lg:grid-cols-2 items-center my-10 gap-10 container;
 
   > .text {
     @apply space-y-4;
@@ -20,7 +20,7 @@
     }
 
     > button {
-      @apply px-8 py-3;
+      @apply px-6 py-2;
     }
   }
 }
