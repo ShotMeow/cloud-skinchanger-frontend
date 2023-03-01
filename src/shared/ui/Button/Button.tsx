@@ -1,12 +1,10 @@
-import React, { FC, HTMLAttributes, PropsWithChildren } from "react";
+import classNames from "classnames";
+import React, { FC, PropsWithChildren } from "react";
+
+import { Props } from "./Button.types";
 
 import styles from "./Button.module.scss";
-import { ButtonVariants } from "@/shared/ui/Button/Button.types";
-import classNames from "classnames";
 
-interface Props extends HTMLAttributes<HTMLButtonElement> {
-  variant: ButtonVariants;
-}
 export const Button: FC<PropsWithChildren<Props>> = ({
   variant,
   children,
