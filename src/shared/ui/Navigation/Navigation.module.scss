@@ -1,0 +1,11 @@
+.navigation {
+  > ul {
+    @apply flex items-center gap-6;
+
+    > li {
+      &.active {
+        @apply font-bold;
+      }
+    }
+  }
+}
