@@ -1,6 +1,8 @@
 .button {
+  @apply font-medium;
+
   &.primary {
-    @apply bg-red;
+    @apply bg-red rounded-sm;
   }
 
   &.secondary {
