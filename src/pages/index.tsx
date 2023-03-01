@@ -1,7 +1,8 @@
 import React from "react";
-import { Layout } from "@/layouts";
 import { NextPage } from "next";
 import Head from "next/head";
+import { Layout } from "@/shared/ui";
+import Landing from "@/widgets/landing/ui/Landing/Landing";
 
 const HomePage: NextPage = () => {
   return (
@@ -9,6 +10,7 @@ const HomePage: NextPage = () => {
       <Head>
         <title>Cloud Skinchanger</title>
       </Head>
+      <Landing />
     </Layout>
   );
 };
