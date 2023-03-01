@@ -4,7 +4,9 @@ import { Head, Html, Main, NextScript } from "next/document";
 const Document: FC = () => {
   return (
     <Html lang="ru">
-      <Head />
+      <Head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      </Head>
       <body>
         <Main />
         <div id="overlay" />
