@@ -3,7 +3,7 @@ import { NextPage } from "next";
 import Head from "next/head";
 import { Layout } from "@/shared/ui";
 import { LandingSection } from "@/widgets/landing";
-import { AdvantagesSection } from "@/widgets/advantages/ui/AdvantagesSection/AdvantagesSection";
+import { AdvantagesSection } from "@/widgets/advantages";
 
 const HomePage: NextPage = () => {
   return (
