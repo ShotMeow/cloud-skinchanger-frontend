@@ -5,8 +5,10 @@ import styles from "./Logo.module.scss";
 
 export const Logo: FC = () => {
   return (
-    <Link href="/" className={styles.logo}>
-      Cloud <span>Skinchanger</span>
-    </Link>
+    <h1>
+      <Link href="/" className={styles.logo}>
+        Cloud <span>Skinchanger</span>
+      </Link>
+    </h1>
   );
 };
