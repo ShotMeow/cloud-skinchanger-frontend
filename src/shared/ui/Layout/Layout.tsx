@@ -5,9 +5,9 @@ import styles from "./Layout.module.scss";
 
 export const Layout: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <>
+    <div className={styles.layout}>
       <Header />
-      <div className={styles.layout}>{children}</div>
-    </>
+      {children}
+    </div>
   );
 };
