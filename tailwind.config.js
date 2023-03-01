@@ -9,6 +9,13 @@ module.exports = {
         gray: "#C8C8C8",
       },
     },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        sm: 0,
+      },
+    },
   },
   plugins: [],
 };
