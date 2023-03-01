@@ -1,0 +1,7 @@
+.logo {
+  @apply text-2xl font-bold;
+
+  > span {
+    @apply text-red;
+  }
+}
