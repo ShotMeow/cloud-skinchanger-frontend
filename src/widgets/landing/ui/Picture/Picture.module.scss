@@ -1,0 +1,11 @@
+.picture {
+  @apply relative hidden lg:block;
+
+  > .legion {
+    @apply relative z-10;
+  }
+
+  > .dots {
+    @apply absolute top-0 left-0 z-0;
+  }
+}

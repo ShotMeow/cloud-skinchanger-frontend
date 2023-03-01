@@ -1,0 +1,26 @@
+.landing {
+  @apply grid lg:grid-cols-2 items-center my-10 gap-10;
+
+  > .text {
+    @apply space-y-4;
+    > h2 {
+      @apply text-3xl font-bold;
+    }
+
+    > h3 {
+      @apply text-2xl font-bold;
+    }
+
+    span {
+      @apply text-red;
+    }
+
+    > p {
+      @apply leading-6;
+    }
+
+    > button {
+      @apply px-8 py-3;
+    }
+  }
+}
