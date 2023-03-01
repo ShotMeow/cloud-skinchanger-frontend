@@ -1,0 +1,9 @@
+.button {
+  &.primary {
+    @apply bg-red text-white;
+  }
+
+  &.secondary {
+    @apply text-red underline;
+  }
+}
