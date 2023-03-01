@@ -2,7 +2,7 @@ import React from "react";
 import { NextPage } from "next";
 import Head from "next/head";
 import { Layout } from "@/shared/ui";
-import Landing from "@/widgets/landing/ui/Landing/Landing";
+import { Landing } from "@/widgets/landing";
 
 const HomePage: NextPage = () => {
   return (

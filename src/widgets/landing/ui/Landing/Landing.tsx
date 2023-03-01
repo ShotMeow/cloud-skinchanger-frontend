@@ -7,7 +7,7 @@ import Image from "next/image";
 
 import applicationSrc from "@/shared/assets/application.webp";
 
-const Landing: FC = () => {
+export const Landing: FC = () => {
   return (
     <section className={styles.landing}>
       <Picture />
@@ -39,5 +39,3 @@ const Landing: FC = () => {
     </section>
   );
 };
-
-export default Landing;
