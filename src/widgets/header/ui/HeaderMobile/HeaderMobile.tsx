@@ -1,4 +1,4 @@
-import React, { FC, useRef, useState } from "react";
+import React, { FC, useState } from "react";
 import dynamic from "next/dynamic";
 
 import styles from "./HeaderMobile.module.scss";

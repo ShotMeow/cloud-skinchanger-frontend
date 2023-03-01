@@ -1,10 +1,4 @@
-import React, {
-  FC,
-  HTMLAttributes,
-  PropsWithChildren,
-  RefObject,
-  useEffect,
-} from "react";
+import React, { FC, HTMLAttributes, PropsWithChildren, useEffect } from "react";
 
 import styles from "./Dropdown.module.scss";
 import classNames from "classnames";
