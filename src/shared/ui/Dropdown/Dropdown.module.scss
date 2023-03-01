@@ -1,5 +1,5 @@
 .overlay {
-  @apply hidden absolute w-full h-full;
+  @apply hidden absolute left-0 top-20 bg-black/60 w-full h-full;
   &.shown {
     @apply block;
   }
