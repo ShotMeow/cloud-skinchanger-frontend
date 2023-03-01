@@ -1,0 +1,6 @@
+.overlay {
+  @apply hidden absolute w-full h-full;
+  &.shown {
+    @apply block;
+  }
+}

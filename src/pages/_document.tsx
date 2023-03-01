@@ -7,6 +7,7 @@ const Document: FC = () => {
       <Head />
       <body>
         <Main />
+        <div id="overlay" />
         <NextScript />
       </body>
     </Html>
