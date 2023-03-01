@@ -1,0 +1,7 @@
+.desktop {
+  @apply hidden lg:flex items-center justify-between;
+
+  > .authorize {
+    @apply px-8 py-2;
+  }
+}
