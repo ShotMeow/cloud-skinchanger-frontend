@@ -1,0 +1,14 @@
+.advantages {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-4;
+  > li {
+    @apply flex items-center gap-4;
+
+    > .icon {
+      @apply bg-red w-10 h-10 flex items-center justify-center rounded-sm flex-shrink-0;
+    }
+
+    > h4 {
+      @apply text-lg font-medium;
+    }
+  }
+}

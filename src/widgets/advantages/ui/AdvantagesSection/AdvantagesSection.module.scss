@@ -1,0 +1,21 @@
+.advantages {
+  @apply bg-gray-dark my-10;
+
+   > .inner {
+     @apply container grid md:grid-cols-2 items-center gap-10 md:gap-20 py-10;
+     > .info {
+       @apply space-y-4;
+       > h3 {
+         @apply text-2xl font-bold;
+       }
+
+       > p {
+         @apply text-gray text-lg;
+       }
+
+       > button {
+         @apply px-6 py-2;
+       }
+     }
+   }
+}
