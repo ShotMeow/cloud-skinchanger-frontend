@@ -1,3 +1,14 @@
 .mobile {
-  @apply flex items-center justify-between lg:hidden;
+  @apply flex items-center justify-between lg:hidden container;
+}
+
+.dropdown {
+  @apply flex flex-col items-center gap-6 bg-white/5 py-6 lg:hidden;
+  > nav > ul {
+    @apply flex-col gap-4;
+  }
+
+  > button {
+    @apply px-6 py-2;
+  }
 }
