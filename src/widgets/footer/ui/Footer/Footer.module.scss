@@ -1,0 +1,48 @@
+.footer {
+  @apply bg-gray-dark;
+  > div {
+    @apply container flex justify-between py-4 flex-col gap-4 items-center text-center lg:text-left lg:items-start lg:gap-0 lg:flex-row;
+    > div {
+      @apply space-y-2;
+      h5 {
+        @apply text-lg font-medium;
+      }
+
+      > ul {
+        @apply text-gray;
+      }
+    }
+
+    > div:first-child {
+      > ul {
+        @apply lg:list-disc lg:pl-6;
+      }
+    }
+
+    > div:nth-child(3) {
+      > ul {
+        @apply flex justify-center lg:justify-start gap-2 text-white;
+
+        > li {
+          > a {
+            @apply w-8 h-8 bg-white/10 flex items-center justify-center rounded-md;
+
+            &:hover {
+              @apply bg-red;
+            }
+          }
+        }
+      }
+    }
+
+    > div:last-child {
+      > button {
+        @apply px-6 py-2;
+      }
+    }
+  }
+
+  > p {
+    @apply text-center py-10;
+  }
+}

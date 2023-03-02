@@ -9,7 +9,7 @@ import Link from "next/link";
 export const TariffsSection: FC = () => {
   const [isSubmit, setIsSubmit] = useState<boolean>(false);
   return (
-    <section className={styles.tariffs}>
+    <section className={styles.section}>
       <Heading>Выбери готовый тариф</Heading>
       <TariffsList />
       <TariffsSlider />

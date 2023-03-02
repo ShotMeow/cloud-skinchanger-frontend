@@ -1,0 +1,28 @@
+.calculator {
+  @apply space-y-6 max-w-full;
+  width: 720px;
+  > div {
+    @apply space-y-2;
+    > h5 {
+      @apply text-lg font-medium;
+    }
+    > label {
+      @apply flex gap-2 text-gray cursor-pointer;
+    }
+  }
+
+  > p {
+    @apply text-lg;
+    > span {
+      @apply font-bold;
+
+      > span {
+        @apply text-red;
+      }
+    }
+  }
+
+  > button {
+    @apply px-8 py-2;
+  }
+}

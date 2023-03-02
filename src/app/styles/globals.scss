@@ -5,3 +5,7 @@
 body {
   @apply bg-black text-white;
 }
+
+html, body, #__next {
+  @apply h-full;
+}
