@@ -1,0 +1,9 @@
+.slider {
+  @apply block xl:hidden w-full overflow-x-hidden;
+
+  .swiper {
+    .slide {
+      @apply w-60;
+    }
+  }
+}

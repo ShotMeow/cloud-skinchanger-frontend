@@ -8,3 +8,5 @@ export { Optimization } from "./Icons/Optimization/Optimization";
 export { Navigation } from "./Navigation/Navigation";
 export { Dropdown } from "./Dropdown/Dropdown";
 export { Layout } from "./Layout/Layout";
+export { Heading } from "./Heading/Heading";
+export { Checkbox } from "./Checkbox/Checkbox";

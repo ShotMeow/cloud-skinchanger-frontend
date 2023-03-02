@@ -1,0 +1,17 @@
+.tariffs {
+  @apply flex flex-col items-center gap-16 my-10 container;
+
+  > label {
+    @apply cursor-pointer flex gap-4 items-center;
+    > p {
+      @apply text-gray;
+      > a {
+        @apply text-red underline;
+      }
+    }
+  }
+
+  > button {
+    @apply px-12 py-3;
+  }
+}

@@ -4,6 +4,7 @@ import Head from "next/head";
 import { Layout } from "@/shared/ui";
 import { LandingSection } from "@/widgets/landing";
 import { AdvantagesSection } from "@/widgets/advantages";
+import { TariffsSection } from "src/features/tariffsChoice";
 
 const HomePage: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage: NextPage = () => {
       </Head>
       <LandingSection />
       <AdvantagesSection />
+      <TariffsSection />
     </Layout>
   );
 };

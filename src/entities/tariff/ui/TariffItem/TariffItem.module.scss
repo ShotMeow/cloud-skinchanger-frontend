@@ -1,0 +1,23 @@
+.tariff {
+  @apply flex flex-col items-center gap-12 py-10 px-14 rounded-md cursor-pointer;
+
+  &:hover {
+    @apply bg-gray-dark;
+  }
+
+  &.active {
+    @apply bg-gray-dark;
+  }
+
+  > * {
+    @apply text-xl font-bold;
+  }
+
+  span {
+    @apply opacity-10;
+
+    &.active {
+      @apply opacity-100;
+    }
+  }
+}
