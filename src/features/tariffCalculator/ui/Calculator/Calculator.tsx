@@ -98,7 +98,6 @@ export const Calculator: FC = () => {
         </label>
       </div>
       <p>
-        {/* ToDo: Сделать динамический подсчёт цены */}
         <span>
           <span>{price} ₽</span> за 3 дней
         </span>
