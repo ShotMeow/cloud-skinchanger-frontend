@@ -1,8 +1,15 @@
-import React, { FC, HTMLAttributes, PropsWithChildren, useEffect } from "react";
+import React, {
+  FC,
+  HTMLAttributes,
+  PropsWithChildren,
+  useEffect,
+  useRef,
+} from "react";
 
 import styles from "./Dropdown.module.scss";
 import classNames from "classnames";
 import { createPortal } from "react-dom";
+import { createFocusTrap } from "focus-trap";
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
   shown: boolean;
@@ -15,6 +22,20 @@ export const Dropdown: FC<PropsWithChildren<Props>> = ({
   children,
   ...props
 }) => {
+  const ref = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const trap = createFocusTrap(ref.current as HTMLDivElement, {
+      allowOutsideClick: true,
+    });
+
+    if (shown) trap.activate();
+
+    return () => {
+      trap.deactivate();
+    };
+  }, [shown]);
+
   useEffect(() => {
     const documentKeydownListener = (event: KeyboardEvent) => {
       if (event.key === "Escape") setShown(false);
@@ -35,7 +56,7 @@ export const Dropdown: FC<PropsWithChildren<Props>> = ({
       })}
       onClick={() => setShown(false)}
     >
-      <div onClick={(event) => event.stopPropagation()} {...props}>
+      <div onClick={(event) => event.stopPropagation()} ref={ref} {...props}>
         {children}
       </div>
     </div>,
