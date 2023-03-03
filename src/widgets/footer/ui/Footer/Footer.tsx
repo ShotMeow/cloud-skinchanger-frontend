@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 import styles from "./Footer.module.scss";
 import Link from "next/link";
-import { Button, Gmail, Instagram, Telegram, Vk } from "@/shared/ui";
+import { Button, Gmail, Telegram, Vk } from "@/shared/ui";
 
 export const Footer: FC = () => {
   return (
@@ -26,16 +26,16 @@ export const Footer: FC = () => {
           <h5>Пользователям и партнёрам</h5>
           <ul>
             <li>
-              <Link href="/download">Правила</Link>
+              <Link href="/">Правила</Link>
             </li>
             <li>
-              <Link href="/subscribe">О проекте</Link>
+              <Link href="/">О проекте</Link>
             </li>
             <li>
-              <Link href="/support">Пользовательское соглашение</Link>
+              <Link href="/">Пользовательское соглашение</Link>
             </li>
             <li>
-              <Link href="/support">Политика конфиденциальности</Link>
+              <Link href="/">Политика конфиденциальности</Link>
             </li>
           </ul>
         </div>
@@ -53,11 +53,6 @@ export const Footer: FC = () => {
               </Link>
             </li>
             <li>
-              <Link href="https://instagram.com">
-                <Instagram />
-              </Link>
-            </li>
-            <li>
               <Link href="mailto:shotmeow@gmail.com">
                 <Gmail />
               </Link>
@@ -66,7 +61,9 @@ export const Footer: FC = () => {
         </div>
         <div>
           <h5>Поддержка</h5>
-          <Button variant="primary">Написать в чате</Button>
+          <Link href="https://t.me/shotmeow">
+            <Button variant="primary">Написать в чате</Button>
+          </Link>
         </div>
       </div>
       <p>© 2023 Cloud Skinchanger. Все права защищены.</p>

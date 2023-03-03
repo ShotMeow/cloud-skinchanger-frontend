@@ -3,7 +3,7 @@
   > div {
     @apply container flex justify-between py-4 flex-col gap-4 items-center text-center lg:text-left lg:items-start lg:gap-0 lg:flex-row;
     > div {
-      @apply space-y-2;
+      @apply flex flex-col gap-2;
       h5 {
         @apply text-lg font-medium;
       }
@@ -36,7 +36,7 @@
     }
 
     > div:last-child {
-      > button {
+      button {
         @apply px-6 py-2;
       }
     }

@@ -13,4 +13,3 @@ export { Radio } from "./Radio/Radio";
 export { Gmail } from "./Icons/Gmail/Gmail";
 export { Vk } from "./Icons/Vk/Vk";
 export { Telegram } from "./Icons/Telegram/Telegram";
-export { Instagram } from "./Icons/Instagram/Instagram";
