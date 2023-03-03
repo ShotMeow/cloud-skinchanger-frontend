@@ -14,7 +14,7 @@ export const TariffsSection: FC = () => {
       <TariffsList />
       <TariffsSlider />
       <label onClick={() => setIsSubmit(!isSubmit)}>
-        <Checkbox isActive={isSubmit} />
+        <Checkbox setIsActive={setIsSubmit} isActive={isSubmit} />
         <p>
           Соглашаюсь с <Link href="/">лицензионным договором</Link>
           <br /> и продлением подписки
