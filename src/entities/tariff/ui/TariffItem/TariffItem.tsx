@@ -5,9 +5,9 @@ import Check from "@/shared/ui/Icons/Check/Check";
 import classNames from "classnames";
 import { TariffItemType } from "@/entities/tariff/model/tariff.types";
 import { getDiscount } from "@/entities/tariff/lib/helpers/getDiscount.helper";
-import { getDuration } from "@/entities/tariff/lib/helpers/getDuration.helper";
 import { useDispatch, useSelector } from "react-redux";
 import { setTariff } from "@/entities/tariff/model/tariff.slice";
+import { getDecorationDay } from "@/shared/lib";
 
 interface Props {
   tariff: TariffItemType;
@@ -33,7 +33,7 @@ export const TariffItem: FC<Props> = ({ tariff }) => {
     >
       <h5>{tariff.title}</h5>
       <p>{tariff.price}₽</p>
-      <p>{getDuration(tariff.duration)}</p>
+      <p>{getDecorationDay(tariff.duration)}</p>
       <p>{getDiscount(tariff.discount)}</p>
       <span
         className={classNames({

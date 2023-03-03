@@ -1,4 +1,4 @@
-export const getDuration = (duration: number): string => {
+export const getDecorationDay = (duration: number): string => {
   if (duration === 1) {
     return `${duration} день`;
   } else if ([2, 3, 4].includes(duration % 10)) {
