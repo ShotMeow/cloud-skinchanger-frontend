@@ -1,0 +1,11 @@
+.picture {
+  @apply relative;
+
+  .application {
+    @apply relative z-10;
+  }
+
+  .dots {
+    @apply absolute -bottom-20 -right-10 lg:block hidden;
+  }
+}

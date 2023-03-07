@@ -3,16 +3,9 @@
 
   > .text {
     @apply space-y-4;
-    > h2 {
-      @apply text-3xl font-bold;
-    }
-
-    > h3 {
-      @apply text-2xl font-bold;
-    }
 
     span {
-      @apply text-red;
+      @apply text-red-light;
     }
 
     > p {

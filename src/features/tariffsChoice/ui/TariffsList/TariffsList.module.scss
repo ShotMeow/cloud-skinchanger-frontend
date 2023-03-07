@@ -4,27 +4,27 @@
   > li:first-child {
     @apply flex flex-col mt-4 text-lg font-medium leading-6 mr-8;
 
-    > h4:nth-child(1) {
+    > p:nth-child(1) {
       @apply mt-24;
     }
 
-    > h4:nth-child(2) {
+    > p:nth-child(2) {
       @apply mt-10;
     }
 
-    > h4:nth-child(3) {
+    > p:nth-child(3) {
       @apply mt-12;
     }
 
-    > h4:nth-child(4) {
+    > p:nth-child(4) {
       @apply mt-9;
     }
 
-    > h4:nth-child(5) {
+    > p:nth-child(5) {
       @apply mt-4;
     }
 
-    > h4:nth-child(6) {
+    > p:nth-child(6) {
       @apply mt-4;
     }
   }

@@ -13,10 +13,12 @@ const HomePage: NextPage = () => {
       <Head>
         <title>Cloud Skinchanger</title>
       </Head>
-      <LandingSection />
-      <AdvantagesSection />
-      <TariffsSection />
-      <TariffCalculatorSection />
+      <main>
+        <LandingSection />
+        <AdvantagesSection />
+        <TariffsSection />
+        <TariffCalculatorSection />
+      </main>
     </Layout>
   );
 };

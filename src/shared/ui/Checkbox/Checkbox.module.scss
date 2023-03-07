@@ -1,12 +1,12 @@
 .checkbox {
-  @apply w-6 h-6 flex items-center justify-center rounded-sm cursor-pointer flex-shrink-0 border-red border;
+  @apply w-6 h-6 flex items-center justify-center rounded-sm cursor-pointer flex-shrink-0 border-red-dark border;
 
   > svg {
     @apply hidden scale-75;
   }
 
   &.active {
-    @apply bg-red;
+    @apply bg-red-dark;
     > svg {
       @apply block;
     }

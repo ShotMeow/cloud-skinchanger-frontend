@@ -12,10 +12,10 @@ export const LandingSection: FC = () => {
     <section className={styles.landing}>
       <LandingPicture />
       <div className={styles.text}>
-        <h2>
+        <h1>
           Cloud <span>Skinchanger</span> - инновационный <br /> инструмент по
           смене скинов <span>Dota 2</span>.
-        </h2>
+        </h1>
         <p>
           Хватит тратить огромные деньги на покупку понравившейся вещи на героя,
           благодаря нашему сервису ты сможешь получить абсолютно все скины,
@@ -24,9 +24,9 @@ export const LandingSection: FC = () => {
         <Button variant="primary">Попробовать бесплатно</Button>
       </div>
       <div className={styles.text}>
-        <h3>
+        <h2>
           О нашей <span>программе</span>
-        </h3>
+        </h2>
         <p>
           Мы работаем по принципу подписки. Покупаешь подписку и для тебя
           открыты все скины и даже больше. Неправда ли дешевле?

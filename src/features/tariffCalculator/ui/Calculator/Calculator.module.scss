@@ -3,8 +3,8 @@
   width: 720px;
   > div {
     @apply space-y-2;
-    > h5 {
-      @apply text-lg font-medium;
+    > p {
+      @apply text-lg font-bold;
     }
     > label {
       @apply flex gap-2 text-gray cursor-pointer;
@@ -17,7 +17,7 @@
       @apply font-bold;
 
       > span {
-        @apply text-red;
+        @apply text-red-light;
       }
     }
   }
@@ -35,7 +35,7 @@
       }
 
       .thumb {
-        @apply bg-red w-4 h-4 rounded-full relative;
+        @apply bg-red-dark w-4 h-4 rounded-full relative;
 
         > p {
           @apply text-sm font-bold absolute top-5 right-3 flex w-full whitespace-nowrap;
@@ -43,7 +43,7 @@
 
         &.active {
           > p {
-            @apply text-red;
+            @apply text-red-light;
           }
         }
       }

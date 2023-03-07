@@ -9,7 +9,7 @@ export const AdvantagesItems: FC = () => {
       {advantagesItems.map((item) => (
         <li key={item.title}>
           <div className={styles.icon}>{item.icon}</div>
-          <h4>{item.title}</h4>
+          <p>{item.title}</p>
         </li>
       ))}
     </ul>

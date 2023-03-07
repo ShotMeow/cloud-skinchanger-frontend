@@ -9,7 +9,7 @@ export const Footer: FC = () => {
     <footer className={styles.footer}>
       <div>
         <div>
-          <h5>Разделы</h5>
+          <p>Разделы</p>
           <ul>
             <li>
               <Link href="/download">Скачать</Link>
@@ -23,7 +23,7 @@ export const Footer: FC = () => {
           </ul>
         </div>
         <div>
-          <h5>Пользователям и партнёрам</h5>
+          <p>Пользователям и партнёрам</p>
           <ul>
             <li>
               <Link href="/">Правила</Link>
@@ -40,27 +40,36 @@ export const Footer: FC = () => {
           </ul>
         </div>
         <div>
-          <h5>Мы в социальных сетях</h5>
+          <p>Мы в социальных сетях</p>
           <ul>
             <li>
-              <Link href="https://vk.com/shotmeow">
+              <Link
+                aria-label="Ссылка на Vkontakte"
+                href="https://vk.com/shotmeow"
+              >
                 <Vk />
               </Link>
             </li>
             <li>
-              <Link href="https://t.me/shotmeow">
+              <Link
+                aria-label="Ссылка на Telegram"
+                href="https://t.me/shotmeow"
+              >
                 <Telegram />
               </Link>
             </li>
             <li>
-              <Link href="mailto:shotmeow@gmail.com">
+              <Link
+                aria-label="Ссылка на Gmail"
+                href="mailto:shotmeow@gmail.com"
+              >
                 <Gmail />
               </Link>
             </li>
           </ul>
         </div>
         <div>
-          <h5>Поддержка</h5>
+          <p>Поддержка</p>
           <Link href="https://t.me/shotmeow">
             <Button variant="primary">Написать в чате</Button>
           </Link>

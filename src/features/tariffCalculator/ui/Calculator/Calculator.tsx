@@ -29,14 +29,14 @@ export const Calculator: FC = () => {
   return (
     <form className={styles.calculator}>
       <div>
-        <h5>Выбери подписку</h5>
+        <p>Выбери подписку</p>
         <label onClick={() => setRadioActive(1)}>
           <Radio
             identifier={1}
             setIsActive={setRadioActive}
             isActive={radioActive === 1}
           />
-          <h6>Обычная</h6>
+          <p>Обычная</p>
         </label>
         <label onClick={() => setRadioActive(2)}>
           <Radio
@@ -44,11 +44,11 @@ export const Calculator: FC = () => {
             setIsActive={setRadioActive}
             isActive={radioActive === 2}
           />
-          <h6>Weekend (праздники и выходные)</h6>
+          <p>Weekend (праздники и выходные)</p>
         </label>
       </div>
       <div className={styles.rangeWrapper}>
-        <h5>Длительность подписки</h5>
+        <p>Длительность подписки</p>
         <div className={styles.range}>
           <Range
             min={1}
@@ -78,6 +78,7 @@ export const Calculator: FC = () => {
                   [styles.thumb]: true,
                   [styles.active]: isDragged,
                 })}
+                aria-label="Бегунок выбора длительности подписки"
                 {...props}
               >
                 <p>{getDecorationDay(value)}</p>
@@ -87,14 +88,14 @@ export const Calculator: FC = () => {
         </div>
       </div>
       <div>
-        <h5>Выбери доп. функции</h5>
+        <p>Выбери доп. функции</p>
         <label onClick={() => setCustomSkins(!customSkins)}>
           <Checkbox setIsActive={setCustomSkins} isActive={customSkins} />
-          <h6>Кастомные скины и модели</h6>
+          <p>Кастомные скины и модели</p>
         </label>
         <label onClick={() => setFriendVision(!friendVision)}>
           <Checkbox setIsActive={setFriendVision} isActive={friendVision} />
-          <h6>Возможность видеть скины друг друга</h6>
+          <p>Возможность видеть скины друг друга</p>
         </label>
       </div>
       <p>

@@ -4,8 +4,9 @@
     @apply container flex justify-between py-4 flex-col gap-4 items-center text-center lg:text-left lg:items-start lg:gap-0 lg:flex-row;
     > div {
       @apply flex flex-col gap-2;
-      h5 {
-        @apply text-lg font-medium;
+
+      > p {
+        @apply text-lg font-bold;
       }
 
       > ul {
@@ -28,7 +29,7 @@
             @apply w-8 h-8 bg-white/10 flex items-center justify-center rounded-md;
 
             &:hover {
-              @apply bg-red;
+              @apply bg-red-dark;
             }
           }
         }

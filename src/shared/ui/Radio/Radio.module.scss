@@ -2,7 +2,7 @@
   @apply w-6 h-6 bg-gray-dark rounded-full flex items-center justify-center;
 
   > div {
-    @apply w-3 h-3 rounded-full bg-red hidden;
+    @apply w-3 h-3 rounded-full bg-red-dark hidden;
   }
 
   &.active {

@@ -31,7 +31,7 @@ export const TariffItem: FC<Props> = ({ tariff }) => {
       })}
       onClick={() => handleClick()}
     >
-      <h5>{tariff.title}</h5>
+      <p>{tariff.title}</p>
       <p>{tariff.price}₽</p>
       <p>{getDecorationDay(tariff.duration)}</p>
       <p>{getDiscount(tariff.discount)}</p>

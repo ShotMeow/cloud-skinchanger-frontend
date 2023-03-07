@@ -1,11 +1,11 @@
 .button {
-  @apply font-medium;
+  @apply font-medium flex items-center gap-2;
 
   &.primary {
-    @apply bg-red rounded-sm;
+    @apply bg-red-dark rounded-sm;
   }
 
   &.secondary {
-    @apply text-red underline;
+    @apply text-red-light underline;
   }
 }

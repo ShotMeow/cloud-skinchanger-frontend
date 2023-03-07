@@ -6,6 +6,10 @@ const Document: FC = () => {
     <Html lang="ru">
       <Head>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta
+          name="description"
+          content="Cloud Skinchanger - сервис, предоставляющий все скины для Dota 2. Безопасно и быстро. Arcane, Immortal, Legendary, Mythical, Uncommon, Common."
+        />
       </Head>
       <body>
         <Main />
